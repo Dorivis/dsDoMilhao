@@ -44,7 +44,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/questions/')
+    axios.get('https://dsdomilhaoback.onrender.com/api/questions')
       .then(res => {
         setQuestions(res.data);
         setIsLoading(false); // Dados carregados
