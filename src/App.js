@@ -10,18 +10,18 @@ function App() {
 
 
 
-  const [playStart, { stop: stopStart }] = useSound('/sounds/start.mp3', { 
+  const [playStart, { stop: stopStart }] = useSound('https://dorivis.github.io/dsDoMilhao/sounds/start.mp3', { 
     volume: 0.7,
     onend: () => console.log('Som terminou naturalmente') // Opcional para debug
   });
   const [hasStarted, setHasStarted] = useState(false);
-  const [playCorrect] = useSound('/sounds/correct.mp3', { volume: 0.7 });
-  const [playWrong] = useSound('/sounds/wrong.mp3', { volume: 0.7 });
-  const [playAudience] = useSound('/sounds/start.mp3', { volume: 0.6 });
-  const [playCards] = useSound('/sounds/start.mp3', { volume: 0.5 });
-  const [playSkip] = useSound('/sounds/skip.mp3', { volume: 0.5 });
-  const [playWin] = useSound('/sounds/win.mp3', { volume: 0.8 });
-  const [playLose] = useSound('/sounds/wrong.mp3', { volume: 0.8 });
+  const [playCorrect] = useSound('https://dorivis.github.io/dsDoMilhao/sounds/correct.mp3', { volume: 0.7 });
+  const [playWrong] = useSound('https://dorivis.github.io/dsDoMilhao/sounds/wrong.mp3', { volume: 0.7 });
+  const [playAudience] = useSound('https://dorivis.github.io/dsDoMilhao/sounds/start.mp3', { volume: 0.6 });
+  const [playCards] = useSound('https://dorivis.github.io/dsDoMilhao/sounds/start.mp3', { volume: 0.5 });
+  const [playSkip] = useSound('https://dorivis.github.io/dsDoMilhao/sounds/skip.mp3', { volume: 0.5 });
+  const [playWin] = useSound('https://dorivis.github.io/dsDoMilhao/sounds/win.mp3', { volume: 0.8 });
+  const [playLose] = useSound('https://dorivis.github.io/dsDoMilhao/sounds/wrong.mp3', { volume: 0.8 });
   const [totalQuestions, setTotalQuestions] = useState(0);
   const [correctAnswers, setCorrectAnswers] = useState(0);
 
@@ -226,7 +226,7 @@ function App() {
         exit={{ opacity: 0 }}
       >
             <img 
-          src="/images/logo.png" 
+          src="https://dorivis.github.io/dsDoMilhao/images/logo.png" 
           alt="DS do Milhão" 
           className="logo-main"
         />
@@ -254,7 +254,7 @@ function App() {
     <div className="app">
       <header className="header">
         <img 
-          src="/images/logo.png" 
+          src="https://dorivis.github.io/dsDoMilhao/images/logo.png" 
           alt="Show do Milhão" 
           className="logo-header"
         />
